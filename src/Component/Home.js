@@ -12,7 +12,8 @@ const Home=()=> {
     const [search, setSearch] = useState("");
     const [pokemon, setpokemon] = useState("")
     const input=(e)=>{
-        const data=e.target.value;
+        const data=e.target.value.toString().toLowerCase();
+      console.log(data);
         setSearch(data);
       //   console.log(data);
     }
